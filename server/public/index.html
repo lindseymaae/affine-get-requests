@@ -5,16 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery.js"></script>
+    <script src="client.js"></script>
     <title>Famous Quotes</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+    
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+    
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Famous Quotes</h1>
+    <input placeholder="Quote"></input><input placeholder="Name"></input><button id="inputButton">Submit</button>
     <table>
-        <thead></thead>
-        <th>Quote</th>
-        <th>Author</th>
-        <tbody>
+        <thead>
+            <tr>
+                <th>Quote</th>
+                <th>Author</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
             <tr>
                 <td>"I'm not going to school just for the academics - I wanted to share ideas, to be around people who
                     are passionate about
@@ -22,13 +46,8 @@
                 <td>Emma Watson</td>
             </tr>
             <tr>
-                <td>"Remember there's no such thing as a small act of kindness. Every act creates a ripple with no
-                    logical end."</td>
-                    <td>Scott Adams</td>
-            </tr>
-            <tr>
                 <td>"Intelligence plus character-that is the goal of true education."</td>
-                <td>Dr. Martin Luther King Jr.</td>
+                <td>Dr. Martin Luther King, Jr.</td>
             </tr>
 
 
