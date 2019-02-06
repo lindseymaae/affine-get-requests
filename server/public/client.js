@@ -6,7 +6,7 @@ function readyNow() {
 }
 
 function addQuote() {
-    $('#tableBody').append(`   
+    $('#quotetableBody').append(`   
              <tr>
                 <td>"Remember there's no such thing as a small act of kindness. Every act creates a ripple with no
                     logical end."</td>
